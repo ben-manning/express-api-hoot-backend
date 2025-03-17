@@ -1,5 +1,4 @@
-const mongooose = require('mongoose');
-
+const mongoose = require('mongoose');
 
 const commentSchema = new mongoose.Schema({
   text: {
@@ -31,6 +30,6 @@ const hootSchema = new mongoose.Schema({
 { timestamps: true }
 );
 
-const Hoot = mongooose.model('Hoot', hootSchema);
+const Hoot = mongoose.model('Hoot', hootSchema);
 
 module.exports = Hoot;
